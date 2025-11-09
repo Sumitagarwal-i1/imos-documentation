@@ -1,0 +1,1440 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://yourusername.github.io/imos-docs/contributing/">
+      
+      
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Contributing to IMOS - IMOS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contributing-to-imos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IMOS Documentation" class="md-header__button md-logo" aria-label="IMOS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IMOS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contributing to IMOS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IMOS Documentation" class="md-nav__button md-logo" aria-label="IMOS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IMOS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Command Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌟 Ways to Contribute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌟 Ways to Contribute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#report-bugs" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐛 Report Bugs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggest-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Suggest Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improve-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 Improve Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribute-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      💻 Contribute Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Development Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Development Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a Feature Branch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Standards
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code Standards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-style-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Style Guide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-quality-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Quality Tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#writing-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation Standards
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentation Standards">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Contribution Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 Contribution Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bug-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐛 Bug Fixes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✨ New Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔧 Performance Improvements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Documentation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-request-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚦 Pull Request Process
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚦 Pull Request Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-submitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Before Submitting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull Request Template
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#review-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review Process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#good-first-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏷️ Good First Issues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏷️ Good First Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beginner-friendly-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beginner-Friendly Tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Issues
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      🤝 Community Guidelines
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤝 Community Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code-of-conduct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code of Conduct
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Channels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏆 Recognition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏆 Recognition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contributor-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributor Recognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintainer-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintainer Path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Development Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Development Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contribution-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contribution Statistics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Standards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎉 Getting Started Today
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎉 Getting Started Today">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#your-first-contribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First Contribution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quick-wins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Wins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="contributing-to-imos">Contributing to IMOS</h1>
+<p>Thank you for your interest in contributing to IMOS! This guide will help you get started with contributing code, documentation, or community support.</p>
+<h2 id="ways-to-contribute">🌟 Ways to Contribute</h2>
+<h3 id="report-bugs">🐛 Report Bugs</h3>
+<p>Found a bug? Help us fix it:
+- Search existing <a href="https://github.com/Sumitagarwal-i/IMOS_terminal/issues">GitHub Issues</a> first
+- Create a detailed bug report with steps to reproduce
+- Include your environment details (OS, Python version, IMOS version)</p>
+<h3 id="suggest-features">💡 Suggest Features</h3>
+<p>Have ideas for new features?
+- Check our <a href="../roadmap/">roadmap</a> to see what's planned
+- Create a feature request issue with detailed use cases
+- Join our <a href="https://github.com/Sumitagarwal-i/IMOS_terminal/discussions">discussions</a> for community feedback</p>
+<h3 id="improve-documentation">📝 Improve Documentation</h3>
+<p>Help make IMOS more accessible:
+- Fix typos or clarify existing documentation
+- Create tutorials or guides for specific use cases
+- Translate documentation to other languages
+- Add code examples and snippets</p>
+<h3 id="contribute-code">💻 Contribute Code</h3>
+<p>Ready to code? We welcome:
+- Bug fixes for reported issues
+- New features from our roadmap
+- Performance improvements
+- Test coverage improvements</p>
+<hr />
+<h2 id="getting-started">🚀 Getting Started</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><strong>Python 3.8+</strong>: Required for development</li>
+<li><strong>Git</strong>: For version control</li>
+<li><strong>Text Editor</strong>: VS Code, PyCharm, or your preferred editor</li>
+</ul>
+<h3 id="development-setup">Development Setup</h3>
+<ol>
+<li>
+<p><strong>Fork and Clone</strong>
+   <code>bash
+   # Fork the repository on GitHub first
+   git clone https://github.com/YOUR_USERNAME/IMOS_terminal.git
+   cd IMOS_terminal</code></p>
+</li>
+<li>
+<p><strong>Create Virtual Environment</strong>
+   ```bash
+   # Create virtual environment
+   python -m venv imos_dev</p>
+</li>
+</ol>
+<p># Activate (Windows)
+   imos_dev\Scripts\activate</p>
+<p># Activate (macOS/Linux)<br />
+   source imos_dev/bin/activate
+   ```</p>
+<ol>
+<li><strong>Install Dependencies</strong>
+   ```bash
+   # Install IMOS in development mode
+   pip install -e .</li>
+</ol>
+<p># Install development dependencies
+   pip install pytest black flake8 mypy
+   ```</p>
+<ol>
+<li><strong>Verify Setup</strong>
+   ```bash
+   # Test that IMOS works
+   imos --help</li>
+</ol>
+<p># Run tests
+   python -m pytest
+   ```</p>
+<h3 id="project-structure">Project Structure</h3>
+<pre><code>IMOS_terminal/
+├── imos/                  # Main package
+│   ├── __init__.py       # Package initialization
+│   ├── main.py           # CLI entry point
+│   ├── memory_db.py      # Database operations
+│   ├── embedding.py      # AI model handling
+│   └── utils.py          # Utility functions
+├── tests/                # Test suite
+│   ├── test_main.py      # CLI tests
+│   ├── test_memory.py    # Database tests
+│   └── test_utils.py     # Utility tests
+├── docs/                 # Documentation
+├── setup.py              # Package configuration
+├── requirements.txt      # Dependencies
+└── README.md            # Project overview
+</code></pre>
+<hr />
+<h2 id="development-workflow">🛠️ Development Workflow</h2>
+<h3 id="creating-a-feature-branch">Creating a Feature Branch</h3>
+<ol>
+<li>
+<p><strong>Sync with main branch</strong>
+   <code>bash
+   git checkout main
+   git pull upstream main</code></p>
+</li>
+<li>
+<p><strong>Create feature branch</strong>
+   <code>bash
+   git checkout -b feature/your-feature-name</code></p>
+</li>
+<li>
+<p><strong>Make your changes</strong>
+   <code>bash
+   # Edit code
+   # Add tests
+   # Update documentation</code></p>
+</li>
+</ol>
+<h3 id="code-standards">Code Standards</h3>
+<h4 id="python-style-guide">Python Style Guide</h4>
+<p>We follow <a href="https://pep8.org/">PEP 8</a> with these specifics:</p>
+<pre><code class="language-python"># Good: Clear function names and docstrings
+def search_memories(query: str, limit: int = 10) -&gt; List[Memory]:
+    &quot;&quot;&quot;Search for memories using semantic similarity.
+
+    Args:
+        query: The search query string
+        limit: Maximum number of results to return
+
+    Returns:
+        List of Memory objects sorted by relevance
+    &quot;&quot;&quot;
+    pass
+
+# Good: Type hints for better code clarity
+from typing import List, Optional, Dict, Any
+
+def add_memory(content: str, source: Optional[str] = None) -&gt; int:
+    &quot;&quot;&quot;Add a new memory to the database.&quot;&quot;&quot;
+    pass
+
+# Good: Clear variable names
+memory_embeddings = generate_embeddings(content)
+similarity_scores = calculate_similarity(query_embedding, memory_embeddings)
+</code></pre>
+<h4 id="code-quality-tools">Code Quality Tools</h4>
+<p><strong>Black (Code Formatting)</strong></p>
+<pre><code class="language-bash"># Format all Python files
+black imos/ tests/
+
+# Check formatting without changes
+black --check imos/ tests/
+</code></pre>
+<p><strong>Flake8 (Linting)</strong></p>
+<pre><code class="language-bash"># Check code style and quality
+flake8 imos/ tests/
+
+# Configuration in setup.cfg
+[flake8]
+max-line-length = 88
+ignore = E203, W503
+</code></pre>
+<p><strong>MyPy (Type Checking)</strong></p>
+<pre><code class="language-bash"># Check type annotations
+mypy imos/
+
+# Configuration in setup.cfg
+[mypy]
+python_version = 3.8
+warn_return_any = True
+warn_unused_configs = True
+</code></pre>
+<h3 id="testing-guidelines">Testing Guidelines</h3>
+<h4 id="writing-tests">Writing Tests</h4>
+<pre><code class="language-python"># tests/test_memory.py
+import pytest
+from imos.memory_db import MemoryDB
+
+def test_add_memory():
+    &quot;&quot;&quot;Test adding a memory to the database.&quot;&quot;&quot;
+    db = MemoryDB(&quot;:memory:&quot;)  # Use in-memory database for testing
+
+    memory_id = db.add_memory(&quot;Test content&quot;, &quot;test_source.txt&quot;)
+
+    assert memory_id &gt; 0
+    memories = db.search_memories(&quot;Test&quot;)
+    assert len(memories) == 1
+    assert memories[0]['content'] == &quot;Test content&quot;
+
+def test_search_empty_database():
+    &quot;&quot;&quot;Test searching in empty database.&quot;&quot;&quot;
+    db = MemoryDB(&quot;:memory:&quot;)
+
+    results = db.search_memories(&quot;anything&quot;)
+
+    assert results == []
+
+# Use fixtures for common setup
+@pytest.fixture
+def sample_db():
+    &quot;&quot;&quot;Create a database with sample data for testing.&quot;&quot;&quot;
+    db = MemoryDB(&quot;:memory:&quot;)
+    db.add_memory(&quot;Python is great&quot;, &quot;python_notes.txt&quot;)
+    db.add_memory(&quot;JavaScript is fun&quot;, &quot;js_notes.txt&quot;)
+    return db
+
+def test_search_with_data(sample_db):
+    &quot;&quot;&quot;Test search functionality with sample data.&quot;&quot;&quot;
+    results = sample_db.search_memories(&quot;Python&quot;)
+
+    assert len(results) &gt;= 1
+    assert any(&quot;Python&quot; in r['content'] for r in results)
+</code></pre>
+<h4 id="running-tests">Running Tests</h4>
+<pre><code class="language-bash"># Run all tests
+python -m pytest
+
+# Run with coverage
+python -m pytest --cov=imos
+
+# Run specific test file
+python -m pytest tests/test_memory.py
+
+# Run tests with verbose output
+python -m pytest -v
+</code></pre>
+<h3 id="documentation-standards">Documentation Standards</h3>
+<h4 id="code-documentation">Code Documentation</h4>
+<pre><code class="language-python">def import_file(file_path: str, chunk_size: int = 1000) -&gt; List[int]:
+    &quot;&quot;&quot;Import content from a file into memory.
+
+    Processes the file content by extracting text, splitting into chunks,
+    and adding each chunk as a separate memory with embeddings.
+
+    Args:
+        file_path: Path to the file to import
+        chunk_size: Maximum characters per memory chunk
+
+    Returns:
+        List of memory IDs that were created
+
+    Raises:
+        FileNotFoundError: If the specified file doesn't exist
+        UnsupportedFileType: If the file type isn't supported
+
+    Example:
+        &gt;&gt;&gt; memory_ids = import_file(&quot;notes.txt&quot;, chunk_size=500)
+        &gt;&gt;&gt; print(f&quot;Imported {len(memory_ids)} memories&quot;)
+    &quot;&quot;&quot;
+    pass
+</code></pre>
+<h4 id="user-documentation">User Documentation</h4>
+<ul>
+<li>Use clear, beginner-friendly language</li>
+<li>Include working code examples</li>
+<li>Provide context for when to use features</li>
+<li>Add screenshots for UI elements</li>
+</ul>
+<hr />
+<h2 id="contribution-types">🎯 Contribution Types</h2>
+<h3 id="bug-fixes">🐛 Bug Fixes</h3>
+<p><strong>Priority Areas:</strong>
+- Memory corruption during imports
+- Search result accuracy issues
+- CLI command parsing errors
+- Database connection problems</p>
+<p><strong>Bug Fix Process:</strong>
+1. Create issue describing the bug
+2. Write a test that reproduces the bug
+3. Fix the bug
+4. Verify the test passes
+5. Submit pull request</p>
+<h3 id="new-features">✨ New Features</h3>
+<p><strong>Current Priorities</strong> (see <a href="../roadmap/">roadmap</a>):
+- Memory editing capabilities
+- Additional file format support
+- Enhanced search filters
+- Team collaboration features</p>
+<p><strong>Feature Development Process:</strong>
+1. Discuss feature in GitHub Discussions
+2. Create detailed design document
+3. Break down into smaller tasks
+4. Implement with tests
+5. Update documentation
+6. Submit pull request</p>
+<h3 id="performance-improvements">🔧 Performance Improvements</h3>
+<p><strong>Focus Areas:</strong>
+- Embedding generation speed
+- Search response time
+- Memory usage optimization
+- Database query performance</p>
+<p><strong>Performance Guidelines:</strong>
+- Profile before optimizing
+- Include benchmarks in pull requests
+- Maintain backward compatibility
+- Document performance impacts</p>
+<h3 id="documentation">📚 Documentation</h3>
+<p><strong>Documentation Types:</strong>
+- <strong>API Documentation</strong>: Code docstrings and type hints
+- <strong>User Guides</strong>: How-to tutorials and examples
+- <strong>Developer Docs</strong>: Architecture and contribution guides
+- <strong>FAQ</strong>: Common questions and troubleshooting</p>
+<hr />
+<h2 id="pull-request-process">🚦 Pull Request Process</h2>
+<h3 id="before-submitting">Before Submitting</h3>
+<p><strong>Checklist:</strong>
+- [ ] Code follows style guidelines (black, flake8, mypy)
+- [ ] Tests pass locally (<code>pytest</code>)
+- [ ] New features have tests
+- [ ] Documentation updated if needed
+- [ ] Commit messages are clear
+- [ ] Branch is up-to-date with main</p>
+<h3 id="pull-request-template">Pull Request Template</h3>
+<pre><code class="language-markdown">## Description
+Brief description of changes and motivation.
+
+## Type of Change
+- [ ] Bug fix (non-breaking change fixing an issue)
+- [ ] New feature (non-breaking change adding functionality)
+- [ ] Breaking change (fix or feature causing existing functionality to not work)
+- [ ] Documentation update
+
+## Testing
+- [ ] Tests pass locally
+- [ ] Added tests for new functionality
+- [ ] Manual testing performed
+
+## Checklist
+- [ ] Code follows style guidelines
+- [ ] Self-review completed
+- [ ] Documentation updated
+- [ ] No breaking changes (or clearly documented)
+</code></pre>
+<h3 id="review-process">Review Process</h3>
+<ol>
+<li><strong>Automated Checks</strong>: CI runs tests and quality checks</li>
+<li><strong>Code Review</strong>: Maintainers review for quality and design</li>
+<li><strong>Testing</strong>: Manual testing for complex features</li>
+<li><strong>Approval</strong>: At least one maintainer approves</li>
+<li><strong>Merge</strong>: Squash and merge to main branch</li>
+</ol>
+<hr />
+<h2 id="good-first-issues">🏷️ Good First Issues</h2>
+<p>Perfect for new contributors:</p>
+<h3 id="beginner-friendly-tasks">Beginner-Friendly Tasks</h3>
+<p><strong>Documentation Improvements</strong>
+- Fix typos in user guides
+- Add more code examples
+- Improve error message clarity
+- Create video tutorials</p>
+<p><strong>Small Code Improvements</strong>
+- Add input validation
+- Improve error handling
+- Add configuration options
+- Enhance CLI help text</p>
+<p><strong>Testing</strong>
+- Add test cases for edge cases
+- Improve test coverage
+- Add integration tests
+- Performance benchmarking</p>
+<h3 id="finding-issues">Finding Issues</h3>
+<p><strong>GitHub Labels:</strong>
+- <code>good first issue</code> - Perfect for newcomers
+- <code>help wanted</code> - Community assistance needed
+- <code>documentation</code> - Documentation improvements
+- <code>bug</code> - Bug fixes needed
+- <code>enhancement</code> - New features</p>
+<p><strong>Issue Template:</strong></p>
+<pre><code class="language-markdown">**Good First Issue: Add file extension validation**
+
+**Description:**
+Currently, IMOS doesn't validate file extensions before import, leading to confusing errors.
+
+**Acceptance Criteria:**
+- [ ] Validate file extensions in import_file()
+- [ ] Show clear error for unsupported formats
+- [ ] Add test cases for validation
+- [ ] Update documentation
+
+**Estimated Effort:** 2-4 hours
+**Skills:** Python, basic file handling
+**Files to modify:** imos/utils.py, tests/test_utils.py
+</code></pre>
+<hr />
+<h2 id="community-guidelines">🤝 Community Guidelines</h2>
+<h3 id="code-of-conduct">Code of Conduct</h3>
+<p><strong>Our Pledge:</strong>
+We're committed to making IMOS an welcoming project for everyone, regardless of experience level, background, or identity.</p>
+<p><strong>Expected Behavior:</strong>
+- Be respectful and inclusive in all interactions
+- Provide constructive feedback and criticism
+- Focus on what's best for the community
+- Show empathy toward other community members</p>
+<p><strong>Unacceptable Behavior:</strong>
+- Harassment or discriminatory language
+- Personal attacks or trolling
+- Publishing private information without permission
+- Other conduct inappropriate in a professional setting</p>
+<p><strong>Enforcement:</strong>
+Report unacceptable behavior to [maintainers@imos.dev] <em>(Coming Soon)</em>. All complaints will be reviewed and investigated promptly and fairly.</p>
+<h3 id="communication-channels">Communication Channels</h3>
+<p><strong>GitHub Discussions</strong>
+- Feature requests and ideas
+- General questions and help
+- Architecture discussions
+- Community announcements</p>
+<p><strong>GitHub Issues</strong><br />
+- Bug reports with detailed reproduction steps
+- Specific feature requests with acceptance criteria
+- Documentation improvements</p>
+<p><strong>Discord</strong> <em>(Coming Soon)</em>
+- Real-time community chat
+- Development discussions
+- Getting started help
+- Community events</p>
+<h3 id="getting-help">Getting Help</h3>
+<p><strong>For Contributors:</strong>
+- Read this contributing guide thoroughly
+- Check existing issues and discussions
+- Ask questions in GitHub Discussions
+- Join our Discord community <em>(Coming Soon)</em></p>
+<p><strong>For Users:</strong>
+- Check the <a href="../faq/">FAQ</a> first
+- Search existing issues
+- Create a new issue with details
+- Join community discussions</p>
+<hr />
+<h2 id="recognition">🏆 Recognition</h2>
+<h3 id="contributor-recognition">Contributor Recognition</h3>
+<p><strong>Types of Recognition:</strong>
+- <strong>Contributors file</strong>: All contributors listed in CONTRIBUTORS.md
+- <strong>Release notes</strong>: Significant contributions highlighted in changelogs
+- <strong>Community showcase</strong>: Featured on project website <em>(Coming Soon)</em>
+- <strong>Swag</strong>: IMOS stickers and merchandise for regular contributors <em>(Coming Soon)</em></p>
+<h3 id="maintainer-path">Maintainer Path</h3>
+<p><strong>Becoming a Maintainer:</strong>
+1. <strong>Consistent contributions</strong> over 3+ months
+2. <strong>Community involvement</strong> in discussions and reviews
+3. <strong>Quality work</strong> meeting our standards consistently
+4. <strong>Demonstrated expertise</strong> in specific areas
+5. <strong>Nomination and approval</strong> by existing maintainers</p>
+<p><strong>Maintainer Responsibilities:</strong>
+- Review pull requests promptly
+- Help guide project direction
+- Mentor new contributors
+- Maintain code quality standards
+- Participate in release planning</p>
+<hr />
+<h2 id="development-metrics">📊 Development Metrics</h2>
+<h3 id="contribution-statistics">Contribution Statistics</h3>
+<p><strong>Monthly Goals:</strong>
+- 10+ bug fixes
+- 5+ feature contributions<br />
+- 20+ documentation improvements
+- 50+ community interactions</p>
+<p><strong>Quality Metrics:</strong>
+- 95%+ test coverage
+- &lt;2 day average review time
+- 90%+ user satisfaction
+- Zero critical security issues</p>
+<h3 id="performance-standards">Performance Standards</h3>
+<p><strong>Code Quality:</strong>
+- All code passes automated quality checks
+- Comprehensive test coverage for new features
+- Clear documentation and examples
+- Performance impact considered</p>
+<p><strong>Community Impact:</strong>
+- Helpful and respectful interactions
+- Constructive feedback and reviews
+- Active participation in discussions
+- Support for other contributors</p>
+<hr />
+<h2 id="getting-started-today">🎉 Getting Started Today</h2>
+<h3 id="your-first-contribution">Your First Contribution</h3>
+<ol>
+<li><strong>🍴 Fork the repository</strong> on GitHub</li>
+<li><strong>📥 Clone your fork</strong> locally</li>
+<li><strong>🔧 Set up development environment</strong></li>
+<li><strong>👀 Browse good first issues</strong></li>
+<li><strong>💬 Comment on an issue</strong> you'd like to work on</li>
+<li><strong>🏗️ Create a branch</strong> and start coding</li>
+<li><strong>✅ Submit a pull request</strong></li>
+</ol>
+<h3 id="quick-wins">Quick Wins</h3>
+<p><strong>15-minute contributions:</strong>
+- Fix typos in documentation
+- Add code examples to docstrings
+- Improve error messages
+- Add configuration options</p>
+<p><strong>1-hour contributions:</strong>
+- Write test cases for existing features
+- Implement small utility functions
+- Create tutorial content
+- Review and test pull requests</p>
+<p><strong>Weekend project contributions:</strong>
+- Implement new file format support
+- Add search filter options
+- Create comprehensive tutorials
+- Build performance benchmarks</p>
+<hr />
+<p><strong>Ready to contribute? We're excited to work with you!</strong></p>
+<p><em>Check out our <a href="https://github.com/Sumitagarwal-i/IMOS_terminal/labels/good%20first%20issue">good first issues</a> and join the conversation in <a href="https://github.com/Sumitagarwal-i/IMOS_terminal/discussions">GitHub Discussions</a>.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

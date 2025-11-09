@@ -1,0 +1,1383 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://yourusername.github.io/imos-docs/use-cases/">
+      
+      
+        <link rel="prev" href="../commands/">
+      
+      
+        <link rel="next" href="../faq/">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Use Cases - IMOS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#real-world-use-cases" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IMOS Documentation" class="md-header__button md-logo" aria-label="IMOS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IMOS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Use Cases
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IMOS Documentation" class="md-nav__button md-logo" aria-label="IMOS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IMOS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Command Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-academia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research &amp; Academia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research &amp; Academia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graduate-student-literature-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graduate Student: Literature Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-institute-cross-disciplinary-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Institute: Cross-Disciplinary Insights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing &amp; Content Creation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing &amp; Content Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#freelance-writer-article-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freelance Writer: Article Research
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#novelist-story-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Novelist: Story Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-consulting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business &amp; Consulting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business &amp; Consulting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#management-consultant-client-knowledge-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Management Consultant: Client Knowledge Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup-founder-market-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Startup Founder: Market Intelligence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-development-technology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Development &amp; Technology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Development &amp; Technology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-lead-architecture-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Lead: Architecture Decisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops-engineer-incident-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps Engineer: Incident Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#education-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Education &amp; Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Education &amp; Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#professional-learner-skill-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professional Learner: Skill Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-manager-curriculum-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Manager: Curriculum Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#healthcare-life-sciences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Healthcare &amp; Life Sciences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Healthcare &amp; Life Sciences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#medical-researcher-clinical-trial-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Medical Researcher: Clinical Trial Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-productivity-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Productivity Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personal Productivity Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#knowledge-worker-personal-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Worker: Personal Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executive-strategic-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executive: Strategic Decision Making
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-your-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started with Your Use Case
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with Your Use Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-your-knowledge-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Define Your Knowledge Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-start-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Start Small
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-build-your-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Build Your Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-scale-gradually" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Scale Gradually
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#research-academia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research &amp; Academia
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Research &amp; Academia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graduate-student-literature-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graduate Student: Literature Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#research-institute-cross-disciplinary-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Research Institute: Cross-Disciplinary Insights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-content-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing &amp; Content Creation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Writing &amp; Content Creation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#freelance-writer-article-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      Freelance Writer: Article Research
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#novelist-story-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Novelist: Story Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-consulting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business &amp; Consulting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business &amp; Consulting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#management-consultant-client-knowledge-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Management Consultant: Client Knowledge Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#startup-founder-market-intelligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Startup Founder: Market Intelligence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-development-technology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software Development &amp; Technology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Development &amp; Technology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-lead-architecture-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Lead: Architecture Decisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devops-engineer-incident-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      DevOps Engineer: Incident Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#education-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Education &amp; Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Education &amp; Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#professional-learner-skill-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Professional Learner: Skill Development
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-manager-curriculum-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training Manager: Curriculum Development
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#healthcare-life-sciences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Healthcare &amp; Life Sciences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Healthcare &amp; Life Sciences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#medical-researcher-clinical-trial-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Medical Researcher: Clinical Trial Analysis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-productivity-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Productivity Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personal Productivity Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#knowledge-worker-personal-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Knowledge Worker: Personal Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executive-strategic-decision-making" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executive: Strategic Decision Making
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-your-use-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started with Your Use Case
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started with Your Use Case">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-define-your-knowledge-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Define Your Knowledge Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-start-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Start Small
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-build-your-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Build Your Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-scale-gradually" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Scale Gradually
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="real-world-use-cases">Real-World Use Cases</h1>
+<p>IMOS transforms how professionals manage knowledge across industries. Here are detailed examples of how different users leverage IMOS to boost productivity and insights.</p>
+<h2 id="research-academia">Research &amp; Academia</h2>
+<h3 id="graduate-student-literature-review">Graduate Student: Literature Review</h3>
+<p><strong>Challenge:</strong> Managing 200+ research papers for thesis literature review.</p>
+<p><strong>IMOS Solution:</strong></p>
+<pre><code class="language-bash"># Import entire research library
+imos import-folder ~/Research/Papers
+
+# Rebuild connections between papers
+imos rebuild-links --threshold 0.80
+
+# Explore research landscape
+imos chat
+imos&gt; What are the main themes in machine learning research?
+imos&gt; Which papers discuss neural network optimization?
+imos&gt; How has the field evolved over the past 5 years?
+imos&gt; What gaps exist in current research?
+</code></pre>
+<p><strong>Results:</strong> 
+- Discovered connections between 12 papers that became thesis chapters
+- Identified 3 research gaps leading to original contributions
+- Reduced literature review time from 3 months to 6 weeks</p>
+<h3 id="research-institute-cross-disciplinary-insights">Research Institute: Cross-Disciplinary Insights</h3>
+<p><strong>Challenge:</strong> Finding connections between biology and AI research for new project proposals.</p>
+<p><strong>IMOS Workflow:</strong></p>
+<pre><code class="language-bash"># Import diverse research areas
+imos import-folder ~/Research/Biology
+imos import-folder ~/Research/AI-ML
+imos import-folder ~/Grants/Proposals
+
+# Search for biomimetic opportunities
+imos ask &quot;How can biological processes inspire AI algorithms?&quot;
+
+# Explore funding alignment
+imos chat
+imos&gt; What funding priorities align with bio-inspired AI?
+imos&gt; Which previous proposals relate to this area?
+imos&gt; What partnerships could strengthen our application?
+</code></pre>
+<p><strong>Outcome:</strong> Secured $2.3M grant by identifying novel bio-AI research direction.</p>
+<hr />
+<h2 id="writing-content-creation">Writing &amp; Content Creation</h2>
+<h3 id="freelance-writer-article-research">Freelance Writer: Article Research</h3>
+<p><strong>Challenge:</strong> Managing research from multiple clients across different industries.</p>
+<p><strong>IMOS Setup:</strong></p>
+<pre><code class="language-bash"># Organize by client
+imos import-folder ~/Clients/TechCorp/Research
+imos import-folder ~/Clients/Healthcare/Materials  
+imos import-folder ~/Clients/Finance/Briefings
+
+# Quick client context switching
+imos ask &quot;What do I know about TechCorp's market position?&quot;
+imos ask &quot;What healthcare trends should I cover?&quot;
+</code></pre>
+<p><strong>Daily Workflow:</strong></p>
+<pre><code class="language-bash"># Morning research review
+imos actions  # Check follow-up tasks
+imos ask &quot;What stories am I working on this week?&quot;
+
+# Research exploration
+imos chat
+imos&gt; What angles haven't been covered in fintech?
+imos&gt; How do these healthcare regulations affect my client?
+imos&gt; What quotes do I need for the TechCorp piece?
+</code></pre>
+<p><strong>Impact:</strong> 40% faster research, higher quality articles with better source diversity.</p>
+<h3 id="novelist-story-development">Novelist: Story Development</h3>
+<p><strong>Challenge:</strong> Tracking character development, plot threads, and world-building details across a fantasy series.</p>
+<p><strong>IMOS Organization:</strong></p>
+<pre><code class="language-bash"># Import creative materials
+imos import-folder ~/Novel/CharacterNotes
+imos import-folder ~/Novel/WorldBuilding  
+imos import-folder ~/Novel/PlotOutlines
+
+# Character consistency checks
+imos ask &quot;What do I know about Sarah's backstory?&quot;
+imos ask &quot;How has the magic system evolved?&quot;
+
+# Plot development
+imos chat
+imos&gt; What loose plot threads need resolution?
+imos&gt; How do my characters' arcs connect?
+imos&gt; What world-building details support the climax?
+</code></pre>
+<p><strong>Results:</strong> Eliminated 15 consistency errors, discovered 3 subplot opportunities, finished novel 2 months ahead of schedule.</p>
+<hr />
+<h2 id="business-consulting">Business &amp; Consulting</h2>
+<h3 id="management-consultant-client-knowledge-management">Management Consultant: Client Knowledge Management</h3>
+<p><strong>Challenge:</strong> Retaining and leveraging insights across 50+ client engagements.</p>
+<p><strong>IMOS Implementation:</strong></p>
+<pre><code class="language-bash"># Import historical engagements
+imos import-folder ~/Clients/Completed-Projects
+imos import-folder ~/Industry-Research
+imos import-folder ~/Methodologies
+
+# Pre-engagement research
+imos ask &quot;What similar challenges have I solved?&quot;
+imos ask &quot;What methodologies worked in this industry?&quot;
+
+# Proposal development
+imos chat
+imos&gt; What frameworks apply to retail transformation?
+imos&gt; Which case studies demonstrate ROI in this sector?
+imos&gt; What risks should we anticipate?
+</code></pre>
+<p><strong>Strategic Application:</strong></p>
+<pre><code class="language-bash"># Cross-industry insights
+imos ask &quot;How did manufacturing clients handle digital transformation?&quot;
+
+# Competitive analysis
+imos chat
+imos&gt; What patterns do I see across competitive landscapes?
+imos&gt; How are market leaders differentiating?
+imos&gt; What disruption factors appear consistently?
+</code></pre>
+<p><strong>Business Impact:</strong> 
+- 60% faster proposal development
+- 25% higher client satisfaction scores
+- Identified $5M cost-saving opportunity from cross-industry insight</p>
+<h3 id="startup-founder-market-intelligence">Startup Founder: Market Intelligence</h3>
+<p><strong>Challenge:</strong> Synthesizing market research, competitor analysis, and customer feedback for product strategy.</p>
+<p><strong>Knowledge Architecture:</strong></p>
+<pre><code class="language-bash"># Import market intelligence
+imos import-folder ~/Market-Research
+imos import-folder ~/Competitor-Analysis
+imos import-folder ~/Customer-Interviews
+imos import-folder ~/Industry-Reports
+
+# Strategic planning sessions
+imos chat
+imos&gt; What do customers really want that competitors don't provide?
+imos&gt; Where are the market gaps in our segment?
+imos&gt; What product features would create competitive advantage?
+imos&gt; How should we position against established players?
+</code></pre>
+<p><strong>Product Development:</strong></p>
+<pre><code class="language-bash"># Feature prioritization
+imos ask &quot;What pain points appear most frequently?&quot;
+imos ask &quot;Which requested features align with our vision?&quot;
+
+# Market timing
+imos chat
+imos&gt; When is the right time to launch based on market signals?
+imos&gt; What indicators suggest market readiness?
+</code></pre>
+<p><strong>Results:</strong> Pivoted product strategy based on cross-pattern analysis, achieved product-market fit 6 months faster than projected.</p>
+<hr />
+<h2 id="software-development-technology">Software Development &amp; Technology</h2>
+<h3 id="technical-lead-architecture-decisions">Technical Lead: Architecture Decisions</h3>
+<p><strong>Challenge:</strong> Making informed technology choices based on team experience and project requirements.</p>
+<p><strong>Technical Knowledge Base:</strong></p>
+<pre><code class="language-bash"># Import technical documentation
+imos import-folder ~/TechDocs/Architecture-Reviews
+imos import-folder ~/TechDocs/Post-Mortems  
+imos import-folder ~/TechDocs/Technology-Evaluations
+imos import-folder ~/TechDocs/Performance-Studies
+
+# Architecture planning
+imos ask &quot;What have we learned about microservices scalability?&quot;
+imos ask &quot;Which databases worked well for high-write workloads?&quot;
+
+# Decision support
+imos chat
+imos&gt; What factors led to successful migrations in the past?
+imos&gt; Which technology choices caused problems we should avoid?
+imos&gt; How did similar projects handle this architectural challenge?
+</code></pre>
+<p><strong>Code Review Enhancement:</strong></p>
+<pre><code class="language-bash"># Pattern recognition
+imos ask &quot;What coding patterns caused bugs in our system?&quot;
+imos ask &quot;Which refactoring approaches worked well?&quot;
+
+# Knowledge sharing
+imos chat
+imos&gt; What lessons should new team members know?
+imos&gt; How can we prevent repeating past mistakes?
+</code></pre>
+<p><strong>Team Impact:</strong> Reduced critical bugs by 45%, improved architecture decision confidence, accelerated onboarding for new engineers.</p>
+<h3 id="devops-engineer-incident-management">DevOps Engineer: Incident Management</h3>
+<p><strong>Challenge:</strong> Learning from incidents to prevent recurrence and improve system reliability.</p>
+<p><strong>Incident Knowledge System:</strong></p>
+<pre><code class="language-bash"># Import incident records
+imos import-folder ~/Incidents/Post-Mortems
+imos import-folder ~/Incidents/Runbooks
+imos import-folder ~/Monitoring/Alerts-Analysis
+
+# Pattern analysis
+imos ask &quot;What common causes appear in our outages?&quot;
+imos ask &quot;Which monitoring gaps led to delayed detection?&quot;
+
+# Preventive insights
+imos chat
+imos&gt; How can we improve our incident response procedures?
+imos&gt; What early warning signs should we monitor more closely?
+imos&gt; Which system dependencies create the most risk?
+</code></pre>
+<p><strong>Reliability Improvement:</strong> Reduced mean time to recovery by 55%, prevented 12 potential incidents through pattern recognition.</p>
+<hr />
+<h2 id="education-learning">Education &amp; Learning</h2>
+<h3 id="professional-learner-skill-development">Professional Learner: Skill Development</h3>
+<p><strong>Challenge:</strong> Connecting knowledge across multiple learning sources for comprehensive understanding.</p>
+<p><strong>Learning System:</strong></p>
+<pre><code class="language-bash"># Import diverse learning materials
+imos import-folder ~/Courses/Online-Classes
+imos import-folder ~/Books/Technical-Notes
+imos import-folder ~/Conferences/Session-Notes
+imos import-folder ~/Articles/Saved-Research
+
+# Knowledge synthesis
+imos chat
+imos&gt; How do these data science concepts connect?
+imos&gt; What skills do industry experts consistently recommend?
+imos&gt; Where are the gaps in my current understanding?
+imos&gt; What should I focus on learning next?
+</code></pre>
+<p><strong>Career Development:</strong></p>
+<pre><code class="language-bash"># Skills assessment
+imos ask &quot;What technical skills appear most in job requirements?&quot;
+imos ask &quot;How do my skills compare to market demands?&quot;
+
+# Learning planning
+imos chat
+imos&gt; Which learning path would be most effective?
+imos&gt; What projects could demonstrate these skills?
+</code></pre>
+<p><strong>Results:</strong> Achieved 3 professional certifications, landed senior role with 40% salary increase, built comprehensive skill portfolio.</p>
+<h3 id="training-manager-curriculum-development">Training Manager: Curriculum Development</h3>
+<p><strong>Challenge:</strong> Creating training programs that address real workplace needs and knowledge gaps.</p>
+<p><strong>Curriculum Intelligence:</strong></p>
+<pre><code class="language-bash"># Import feedback and assessments
+imos import-folder ~/Training/Feedback-Forms
+imos import-folder ~/Training/Assessment-Results
+imos import-folder ~/Training/Industry-Standards
+imos import-folder ~/Training/Employee-Reviews
+
+# Needs analysis
+imos ask &quot;What skill gaps appear most frequently in assessments?&quot;
+imos ask &quot;Which training modules receive the best feedback?&quot;
+
+# Program optimization
+imos chat
+imos&gt; How can we improve learning outcomes?
+imos&gt; What training approaches work best for different roles?
+imos&gt; Where should we focus our training budget?
+</code></pre>
+<p><strong>Training Excellence:</strong> Improved training effectiveness scores by 35%, reduced skill gap remediation time by 50%.</p>
+<hr />
+<h2 id="healthcare-life-sciences">Healthcare &amp; Life Sciences</h2>
+<h3 id="medical-researcher-clinical-trial-analysis">Medical Researcher: Clinical Trial Analysis</h3>
+<p><strong>Challenge:</strong> Synthesizing findings across multiple clinical studies for meta-analysis.</p>
+<p><strong>Research Integration:</strong></p>
+<pre><code class="language-bash"># Import clinical data and literature
+imos import-folder ~/ClinicalTrials/Study-Reports
+imos import-folder ~/Literature/Meta-Analyses
+imos import-folder ~/Regulations/FDA-Guidelines
+
+# Pattern identification
+imos ask &quot;What common side effects appear across similar trials?&quot;
+imos ask &quot;Which patient populations show best response rates?&quot;
+
+# Regulatory compliance
+imos chat
+imos&gt; What regulatory considerations affect our trial design?
+imos&gt; How have similar studies addressed safety concerns?
+imos&gt; What endpoints are most meaningful for approval?
+</code></pre>
+<p><strong>Research Acceleration:</strong> Identified optimal trial design 3 months faster, improved patient safety protocols, enhanced regulatory approval likelihood.</p>
+<hr />
+<h2 id="personal-productivity-examples">Personal Productivity Examples</h2>
+<h3 id="knowledge-worker-personal-learning">Knowledge Worker: Personal Learning</h3>
+<p><strong>Daily IMOS Routine:</strong></p>
+<pre><code class="language-bash"># Morning knowledge review (5 minutes)
+imos actions  # Check follow-ups
+imos ask &quot;What did I learn yesterday?&quot;
+
+# Lunch learning synthesis (10 minutes)  
+imos add &quot;Key insight from today's meeting: Customer retention improves 40% with personalized onboarding&quot;
+imos chat
+imos&gt; How does this relate to our product strategy?
+
+# Evening reflection (10 minutes)
+imos ask &quot;What themes emerged today?&quot;
+imos chat
+imos&gt; What should I explore further tomorrow?
+</code></pre>
+<h3 id="executive-strategic-decision-making">Executive: Strategic Decision Making</h3>
+<p><strong>Weekly Strategic Review:</strong></p>
+<pre><code class="language-bash"># Monday: Situation assessment
+imos ask &quot;What market changes happened last week?&quot;
+imos ask &quot;What feedback did we receive from customers?&quot;
+
+# Wednesday: Progress check
+imos chat
+imos&gt; How are our initiatives progressing against goals?
+imos&gt; What obstacles are emerging?
+
+# Friday: Strategic planning
+imos chat
+imos&gt; What opportunities should we prioritize next week?
+imos&gt; How do recent insights affect our strategy?
+</code></pre>
+<hr />
+<h2 id="getting-started-with-your-use-case">Getting Started with Your Use Case</h2>
+<h3 id="step-1-define-your-knowledge-scope">Step 1: Define Your Knowledge Scope</h3>
+<ul>
+<li>What information do you work with regularly?</li>
+<li>Where is this information currently stored?</li>
+<li>What decisions depend on this knowledge?</li>
+</ul>
+<h3 id="step-2-start-small">Step 2: Start Small</h3>
+<ul>
+<li>Choose 1-2 folders of important content</li>
+<li>Import and explore with IMOS</li>
+<li>Identify your most valuable use patterns</li>
+</ul>
+<h3 id="step-3-build-your-workflow">Step 3: Build Your Workflow</h3>
+<ul>
+<li>Establish daily/weekly IMOS routines</li>
+<li>Create standard questions for your domain</li>
+<li>Develop import and review processes</li>
+</ul>
+<h3 id="step-4-scale-gradually">Step 4: Scale Gradually</h3>
+<ul>
+<li>Add more content areas over time</li>
+<li>Refine your search and chat techniques</li>
+<li>Share insights with colleagues</li>
+</ul>
+<hr />
+<p><strong>Ready to transform your knowledge work?</strong> Start with the <a href="../getting-started/">getting started guide</a> and adapt these patterns to your specific needs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
