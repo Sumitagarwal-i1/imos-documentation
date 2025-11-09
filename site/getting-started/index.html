@@ -1,0 +1,1496 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://yourusername.github.io/imos-docs/getting-started/">
+      
+      
+        <link rel="prev" href="../installation/">
+      
+      
+        <link rel="next" href="../commands/">
+      
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Quickstart - IMOS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started-with-imos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="IMOS Documentation" class="md-header__button md-logo" aria-label="IMOS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IMOS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quickstart
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="IMOS Documentation" class="md-nav__button md-logo" aria-label="IMOS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IMOS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Install
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Quickstart
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quickstart
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-10-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First 10 Minutes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Your First 10 Minutes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-verify-installation-30-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Verify Installation (30 seconds)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-your-first-memory-1-minute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add Your First Memory (1 minute)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-import-some-files-2-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Import Some Files (2 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-list-your-memories-30-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: List Your Memories (30 seconds)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-search-your-memories-1-minute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Search Your Memories (1 minute)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-start-a-conversation-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Start a Conversation (5 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-check-for-actions-30-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Check for Actions (30 seconds)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-imos-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding IMOS Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding IMOS Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Cycle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Linking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-first-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common First Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common First Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-researchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Researchers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-writers" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Writers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-entrepreneurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Entrepreneurs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizing-your-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Your Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Your Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Conventions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Quality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effective-searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effective Searching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effective Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ask-good-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ask Good Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-chat-mode-for-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Chat Mode for Exploration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Sources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-your-knowledge-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Knowledge Base
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Your Knowledge Base">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Small
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regular-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-your-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Your Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-first-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common First Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Command Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../community.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-10-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First 10 Minutes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Your First 10 Minutes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-verify-installation-30-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Verify Installation (30 seconds)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-add-your-first-memory-1-minute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Add Your First Memory (1 minute)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-import-some-files-2-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Import Some Files (2 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-list-your-memories-30-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: List Your Memories (30 seconds)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-search-your-memories-1-minute" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Search Your Memories (1 minute)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-start-a-conversation-5-minutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Start a Conversation (5 minutes)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-check-for-actions-30-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 7: Check for Actions (30 seconds)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-imos-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding IMOS Workflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding IMOS Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Cycle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Concepts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Concepts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#memories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Semantic Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-linking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Linking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-first-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common First Tasks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common First Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-researchers" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Researchers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-writers" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Writers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-entrepreneurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Entrepreneurs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organizing-your-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizing Your Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizing Your Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Conventions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content Quality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effective-searching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effective Searching
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effective Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ask-good-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ask Good Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-chat-mode-for-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use Chat Mode for Exploration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check Sources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-your-knowledge-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Knowledge Base
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Your Knowledge Base">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Small
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regular-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-your-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup Your Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Reference
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-first-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common First Questions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Help
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="getting-started-with-imos">Getting Started with IMOS</h1>
+<p>Welcome to IMOS! This guide will walk you through your first 10 minutes with your new memory assistant. By the end, you'll have a working knowledge base and understand how to use IMOS effectively.</p>
+<h2 id="your-first-10-minutes">Your First 10 Minutes</h2>
+<h3 id="step-1-verify-installation-30-seconds">Step 1: Verify Installation (30 seconds)</h3>
+<pre><code class="language-bash">imos --help
+</code></pre>
+<p>You should see the IMOS command menu. If not, check the <a href="../installation/">installation guide</a>.</p>
+<h3 id="step-2-add-your-first-memory-1-minute">Step 2: Add Your First Memory (1 minute)</h3>
+<p>Let's start with a simple memory:</p>
+<pre><code class="language-bash">imos add &quot;Python is a versatile programming language great for data science&quot;
+</code></pre>
+<p>You should see: <code>IMOS: Added memory #1</code></p>
+<h3 id="step-3-import-some-files-2-minutes">Step 3: Import Some Files (2 minutes)</h3>
+<p>If you have existing notes, let's import them:</p>
+<pre><code class="language-bash"># Import a single file
+imos addfile path/to/your/notes.txt
+
+# Import an entire folder
+imos import-folder ~/Documents/Notes
+</code></pre>
+<p>IMOS will process each file and show you the progress.</p>
+<h3 id="step-4-list-your-memories-30-seconds">Step 4: List Your Memories (30 seconds)</h3>
+<p>See what's in your knowledge base:</p>
+<pre><code class="language-bash">imos list
+</code></pre>
+<p>You'll see a numbered list of all your memories with previews.</p>
+<h3 id="step-5-search-your-memories-1-minute">Step 5: Search Your Memories (1 minute)</h3>
+<p>Try asking IMOS a question:</p>
+<pre><code class="language-bash">imos ask &quot;What do I know about Python?&quot;
+</code></pre>
+<p>IMOS will find relevant memories and show you the sources.</p>
+<h3 id="step-6-start-a-conversation-5-minutes">Step 6: Start a Conversation (5 minutes)</h3>
+<p>Now for the fun part - chat with your memories:</p>
+<pre><code class="language-bash">imos chat
+</code></pre>
+<p>You'll see the IMOS logo and enter interactive mode. Try these example conversations:</p>
+<pre><code>imos&gt; What programming languages do I know?
+imos&gt; Tell me about my project ideas
+imos&gt; What are my recent TODO items?
+imos&gt; exit
+</code></pre>
+<h3 id="step-7-check-for-actions-30-seconds">Step 7: Check for Actions (30 seconds)</h3>
+<p>IMOS automatically finds action items in your notes:</p>
+<pre><code class="language-bash">imos actions
+</code></pre>
+<p>If IMOS found any TODOs or action items, you'll see them listed.</p>
+<h2 id="understanding-imos-workflow">Understanding IMOS Workflow</h2>
+<h3 id="the-basic-cycle">The Basic Cycle</h3>
+<ol>
+<li><strong>Import</strong> content (files, manual entries)</li>
+<li><strong>Search</strong> or <strong>chat</strong> to find information</li>
+<li><strong>Take action</strong> on insights discovered</li>
+<li><strong>Add more</strong> content as you work</li>
+</ol>
+<h3 id="key-concepts">Key Concepts</h3>
+<h4 id="memories">Memories</h4>
+<p>Everything in IMOS is a "memory" - a piece of text with:
+- <strong>Content</strong>: The actual text
+- <strong>Source</strong>: Where it came from (file path or "manual")
+- <strong>Embedding</strong>: AI representation for smart search
+- <strong>Links</strong>: Connections to related memories</p>
+<h4 id="semantic-search">Semantic Search</h4>
+<p>Unlike traditional search, IMOS understands meaning:
+- Search "programming" and find "coding", "development", "software"
+- Ask "project ideas" and find relevant concepts even without exact words</p>
+<h4 id="memory-linking">Memory Linking</h4>
+<p>IMOS automatically connects similar memories:
+- Related concepts get linked together
+- Chat mode shows both primary and linked sources
+- Helps discover connections you might miss</p>
+<h2 id="common-first-tasks">Common First Tasks</h2>
+<h3 id="for-researchers">For Researchers</h3>
+<pre><code class="language-bash"># Import your paper collection
+imos import-folder ~/Research/Papers
+
+# Find papers on a topic
+imos ask &quot;What papers do I have about machine learning?&quot;
+
+# Start exploring connections
+imos chat
+imos&gt; How do my ML papers relate to my data science notes?
+</code></pre>
+<h3 id="for-writers">For Writers</h3>
+<pre><code class="language-bash"># Import your writing folder
+imos import-folder ~/Writing
+
+# Find character notes
+imos ask &quot;Tell me about my main character&quot;
+
+# Explore themes
+imos chat
+imos&gt; What themes appear across my stories?
+</code></pre>
+<h3 id="for-students">For Students</h3>
+<pre><code class="language-bash"># Import course materials
+imos import-folder ~/School/CourseNotes
+
+# Study for exams
+imos ask &quot;What did I learn about calculus?&quot;
+
+# Make connections
+imos chat
+imos&gt; How does calculus relate to my physics notes?
+</code></pre>
+<h3 id="for-entrepreneurs">For Entrepreneurs</h3>
+<pre><code class="language-bash"># Import business notes
+imos import-folder ~/Business
+
+# Review ideas
+imos ask &quot;What business opportunities have I identified?&quot;
+
+# Strategic thinking
+imos chat
+imos&gt; What trends do I see across my industry research?
+</code></pre>
+<h2 id="best-practices">Best Practices</h2>
+<h3 id="organizing-your-content">Organizing Your Content</h3>
+<h4 id="file-structure">File Structure</h4>
+<p>Keep your files organized before importing:</p>
+<pre><code>~/Knowledge/
+├── Projects/
+├── Research/
+├── Meeting-Notes/
+├── Ideas/
+└── Learning/
+</code></pre>
+<h4 id="naming-conventions">Naming Conventions</h4>
+<p>Use descriptive filenames:
+- <code>2024-11-09-client-meeting.txt</code> instead of <code>notes.txt</code>
+- <code>ml-research-summary.md</code> instead of <code>summary.md</code></p>
+<h4 id="content-quality">Content Quality</h4>
+<ul>
+<li><strong>Be descriptive</strong>: Write complete thoughts, not just keywords</li>
+<li><strong>Add context</strong>: Include dates, sources, and background</li>
+<li><strong>Use your own words</strong>: IMOS works better with your natural language</li>
+</ul>
+<h3 id="effective-searching">Effective Searching</h3>
+<h4 id="ask-good-questions">Ask Good Questions</h4>
+<p>Instead of keywords, use natural language:
+- <strong>Good</strong>: "What did I learn about customer feedback?"
+- <strong>Better</strong>: "How can I improve my product based on user input?"</p>
+<h4 id="use-chat-mode-for-exploration">Use Chat Mode for Exploration</h4>
+<ul>
+<li>Start broad, then get specific</li>
+<li>Ask follow-up questions</li>
+<li>Let IMOS guide you to related content</li>
+</ul>
+<h4 id="check-sources">Check Sources</h4>
+<p>Always review the source files IMOS references to get full context.</p>
+<h3 id="building-your-knowledge-base">Building Your Knowledge Base</h3>
+<h4 id="start-small">Start Small</h4>
+<ul>
+<li>Begin with 10-20 important files</li>
+<li>Get comfortable with basic commands</li>
+<li>Gradually import more content</li>
+</ul>
+<h4 id="regular-maintenance">Regular Maintenance</h4>
+<ul>
+<li>Add new content regularly</li>
+<li>Use <code>imos rebuild-links</code> after bulk imports</li>
+<li>Review and complete action items</li>
+</ul>
+<h4 id="backup-your-data">Backup Your Data</h4>
+<p>Your <code>memory.db</code> file contains all your processed memories:</p>
+<pre><code class="language-bash"># Find your database
+ls -la memory.db
+
+# Back it up regularly
+cp memory.db backup-$(date +%Y%m%d).db
+</code></pre>
+<h2 id="quick-reference">Quick Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add manual memory</td>
+<td><code>imos add "your text here"</code></td>
+</tr>
+<tr>
+<td>Import single file</td>
+<td><code>imos addfile path/to/file.txt</code></td>
+</tr>
+<tr>
+<td>Import folder</td>
+<td><code>imos import-folder path/to/folder</code></td>
+</tr>
+<tr>
+<td>Search memories</td>
+<td><code>imos ask "your question"</code></td>
+</tr>
+<tr>
+<td>Start conversation</td>
+<td><code>imos chat</code></td>
+</tr>
+<tr>
+<td>List all memories</td>
+<td><code>imos list</code></td>
+</tr>
+<tr>
+<td>View action items</td>
+<td><code>imos actions</code></td>
+</tr>
+<tr>
+<td>Mark action complete</td>
+<td><code>imos done 1</code></td>
+</tr>
+<tr>
+<td>Show linked memories</td>
+<td><code>imos links 1</code></td>
+</tr>
+<tr>
+<td>Rebuild connections</td>
+<td><code>imos rebuild-links</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="common-first-questions">Common First Questions</h2>
+<p><strong>Q: How much content should I import initially?</strong>
+A: Start with 10-50 files to get a feel for IMOS. Quality beats quantity.</p>
+<p><strong>Q: Can I edit memories after adding them?</strong>
+A: Currently, memories are read-only. Add new, updated content and IMOS will link related information.</p>
+<p><strong>Q: How accurate is the AI search?</strong>
+A: Very accurate for conceptual searches. IMOS excels at finding meaning, not just keywords.</p>
+<p><strong>Q: What happens to my data?</strong>
+A: Everything stays local except chat queries sent to Groq for AI responses.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Now that you're familiar with the basics:</p>
+<ol>
+<li><strong><a href="../commands/">Command Reference</a></strong> - Learn advanced features</li>
+<li><strong><a href="../use-cases/">Use Cases</a></strong> - See detailed workflows</li>
+<li><strong><a href="../faq/">FAQ</a></strong> - Get answers to common questions</li>
+</ol>
+<h2 id="getting-help">Getting Help</h2>
+<ul>
+<li><strong>Quick Help</strong>: <code>imos command --help</code></li>
+<li><strong>Community</strong>: Join our <a href="community.md">community</a></li>
+<li><strong>Issues</strong>: Report bugs on <a href="https://github.com/Sumitagarwal-i/IMOS_terminal/issues">GitHub</a></li>
+</ul>
+<hr />
+<p><em>Ready to unlock the full potential of your knowledge? Let's dive deeper into IMOS!</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
