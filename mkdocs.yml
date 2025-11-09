@@ -1,0 +1,14 @@
+site_name: IMOS Documentation
+site_url: https://yourusername.github.io/imos-docs/
+theme:
+  name: material    # (optional, if you have a logo)
+  favicon: images/favicon.ico     # (optional)
+nav:
+  - Home: index.md
+  - Install: installation.md
+  - Quickstart: getting-started.md
+  - Command Reference: commands.md
+  - Use Cases: use-cases.md
+  - FAQ: faq.md
+  - Community: community.md
+  - Roadmap: roadmap.md
