@@ -1,7 +1,7 @@
 site_name: IMOS Documentation
-site_url: https://yourusername.github.io/imos-docs/
+site_url: https://sumitagarwal-i1.github.io/imos-documentation/
 theme:
-  name: material    # (optional, if you have a logo)
+  name: material
 nav:
   - Home: index.md
   - Install: installation.md
