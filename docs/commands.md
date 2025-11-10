@@ -6,7 +6,7 @@ This guide covers every IMOS command with detailed explanations, examples, and a
 
 IMOS commands fall into four main categories:
 - **[Content Management](#content-management)**: Add and import memories
-- **[Search & Chat](#search--chat)**: Find and interact with your knowledge
+- **[Search & Chat](#search-chat)**: Find and interact with your knowledge
 - **[Organization](#organization)**: Manage memories and connections
 - **[Action Tracking](#action-tracking)**: Handle tasks and TODOs
 
