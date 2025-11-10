@@ -1,4 +1,4 @@
-# IMOS: Memory OS for Solo Professionals
+# IMOS: Memory OS for Solo Independent Professionals
 
 ```
  ██╗███╗   ███╗ ██████╗ ███████╗
@@ -13,6 +13,12 @@
 ## What is IMOS?
 
 IMOS is a powerful command-line tool that transforms your scattered notes, documents, and ideas into an intelligent, searchable knowledge base. Think of it as having a personal AI assistant that knows everything you've ever written and can instantly find relevant information when you need it.
+
+## Privacy Matters
+
+Your data is yours—always. IMOS is designed to run entirely on your local machine, and never stores, shares, or uploads your personal notes, files, or memories to any external server.
+All knowledge, insights, and action items remain strictly private, giving independent professionals full control over their information at every step.
+We believe your productivity should not come at the cost of your privacy.
 
 ## Why IMOS?
 
